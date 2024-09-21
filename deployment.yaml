@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: fastapi-backend
-        image: diakarou/fastapi-react:latest # Replace avec ton image
+        image: diakarou/centosv2:centosv2 # Replace avec ton image
         ports:
         - containerPort: 8000
