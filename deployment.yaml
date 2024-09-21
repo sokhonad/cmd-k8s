@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: fastapi-backend
-        image: ton-utilisateur-dockerhub/nom-de-ton-image:tag # Replace avec ton image
+        image: diakarou/fastapi-react:tagname # Replace avec ton image
         ports:
         - containerPort: 8000
