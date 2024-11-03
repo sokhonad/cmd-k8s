@@ -1,6 +1,7 @@
 # cmd-k8s
 ```sh
 kubectl port-forward svc/argocd-server -n argocd 8080:443
+kubectl create namespace argocd
 *********************kube******************************
 minikube dashboard
 minikube stop
