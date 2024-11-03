@@ -1,5 +1,17 @@
 # cmd-k8s
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+*********************kube******************************
+minikube dashboard
+minikube stop
+minikube star
+kubectl get deployments
+kubectl port-forward svc/argocd-server -n argocd 8080:443
+kubectl apply -f deployment.yaml
+kubectl get pods
+kubectl get secret argocd-initial-admin-secret -n argocd -o jsonpath="{.data.password}" | base64 -d
 
+
+**************************************************************************************
 La commande que tu as exécutée, kubectl apply -k https://github.com/argoproj/argo-cd/manifests/crds?ref=stable, a installé les Custom Resource Definitions (CRDs) pour Argo CD dans ton cluster Kubernetes. Les CRDs permettent à Kubernetes de reconnaître de nouvelles ressources personnalisées propres à Argo CD.
 Explication des CRDs créées :
 
